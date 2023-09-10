@@ -10,7 +10,10 @@ jobs:
       security-events: write
     strategy:
       matrix:
-        project: [Chapter02/catalog-service]
+        project: [
+          Chapter02/catalog-service, 
+          Chapter03/catalog-service
+        ]
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
